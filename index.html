@@ -1,77 +1,320 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChemGuru</title>
+<title>ChemGuru - Sudhir Gaur</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#eef2f7;
-text-align:center;
-padding:20px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-.card{
-max-width:600px;
+body{
+background:linear-gradient(135deg,#0b1f4d,#0d6efd);
+color:white;
+}
+
+.hero{
+padding:40px 20px;
+}
+
+.container{
+max-width:1200px;
 margin:auto;
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.top{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+}
+
+.left{
+flex:1;
+min-width:300px;
+}
+
+.right{
+flex:1;
+text-align:center;
+}
+
+.right img{
+width:320px;
+max-width:100%;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.4);
 }
 
 .logo{
-width:180px;
-border-radius:20px;
+font-size:55px;
+font-weight:700;
+}
+
+.logo span{
+color:#00e676;
+}
+
+.tag{
+font-size:20px;
+margin-top:10px;
+opacity:.9;
+}
+
+.title{
+font-size:48px;
+font-weight:700;
+margin-top:25px;
+line-height:1.2;
+}
+
+.highlight{
+color:#00e676;
+}
+
+.developer{
+margin-top:30px;
+font-size:20px;
+}
+
+.name{
+font-size:42px;
+font-weight:700;
+}
+
+.school{
+margin-top:20px;
+background:white;
+color:#222;
+padding:15px;
+border-radius:15px;
+display:inline-block;
+font-weight:600;
+}
+
+.features{
+background:white;
+color:#222;
+margin-top:50px;
+border-radius:25px;
+padding:30px;
+}
+
+.features h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f5f7ff;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.card h3{
+color:#0d47a1;
+margin-bottom:10px;
 }
 
 .download{
-display:inline-block;
-background:#0d6efd;
-color:white;
-padding:15px 30px;
-text-decoration:none;
-border-radius:10px;
-font-size:20px;
-margin-top:20px;
+text-align:center;
+padding:50px 20px;
 }
 
-.download:hover{
-background:#084298;
+.btn{
+display:inline-block;
+background:#00e676;
+color:#000;
+padding:18px 45px;
+font-size:24px;
+font-weight:700;
+border-radius:50px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.contact{
+background:#081833;
+padding:30px;
+margin-top:40px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.box{
+background:#102755;
+padding:20px;
+border-radius:15px;
+}
+
+.box h3{
+margin-bottom:10px;
+color:#00e676;
+}
+
+.footer{
+text-align:center;
+padding:25px;
+background:#05112a;
+}
+
+@media(max-width:768px){
+
+.logo{
+font-size:42px;
+}
+
+.title{
+font-size:34px;
+}
+
+.name{
+font-size:32px;
+}
+
 }
 </style>
 </head>
 
 <body>
 
+<section class="hero">
+
+<div class="container">
+
+<div class="top">
+
+<div class="left">
+
+<div class="logo">
+Chem<span>Guru</span>
+</div>
+
+<div class="tag">
+Learn • Practice • Master Chemistry
+</div>
+
+<div class="title">
+Chemistry Learning App for
+<span class="highlight">Class 11 & 12 Students</span>
+</div>
+
+<div class="developer">
+Developed By
+</div>
+
+<div class="name">
+Sudhir Gaur
+</div>
+
+<div class="school">
+🏫 Navbharat Public School
+</div>
+
+</div>
+
+<div class="right">
+<img src="sudhir.jpg" alt="Sudhir Gaur">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>🚀 Powerful Learning Features</h2>
+
+<div class="grid">
+
 <div class="card">
+<h3>📚 Chapter Notes</h3>
+<p>Easy and detailed chapter-wise notes.</p>
+</div>
 
-<h1>ChemGuru</h1>
+<div class="card">
+<h3>❓ MCQs</h3>
+<p>Practice topic-wise objective questions.</p>
+</div>
 
-<h3>By Sudhir Gaur</h3>
+<div class="card">
+<h3>🏆 Quiz</h3>
+<p>Test your preparation instantly.</p>
+</div>
 
-<a href="https://github.com/Sudhirgaur/ChemGuruSudhir/releases/download/v1.0/SUDHIR.apk">
-<img src="logo.png" class="logo">
-</a>
+<div class="card">
+<h3>🧠 Mind Maps</h3>
+<p>Visual learning made simple.</p>
+</div>
 
-<p>
-Chemistry Learning App for Class 11 & 12 Students
-</p>
+</div>
 
-<p>
-✔ Notes<br>
-✔ MCQs<br>
-✔ Quiz<br>
-✔ Mind Maps
-</p>
+</section>
 
-<a class="download"
+<section class="download">
+
+<h2 style="margin-bottom:25px;">
+📲 Download ChemGuru APK
+</h2>
+
+<a class="btn"
 href="https://github.com/Sudhirgaur/ChemGuruSudhir/releases/download/v1.0/SUDHIR.apk">
-📥 Download ChemGuru APK
+DOWNLOAD NOW
 </a>
 
+</section>
+
+<section class="contact">
+
+<div class="contact-grid">
+
+<div class="box">
+<h3>📞 Contact</h3>
+<p>8004093350</p>
+</div>
+
+<div class="box">
+<h3>🏫 School</h3>
+<p>Navbharat Public School</p>
+</div>
+
+<div class="box">
+<h3>📚 App</h3>
+<p>ChemGuru Learning Platform</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
+ChemGuru © 2026 | Chemistry Made Easy
 </div>
 
 </body>
