@@ -2,44 +2,58 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChemGuru - Sudhir Gaur</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChemGuru - Navbharat Public School</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Poppins,sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#0b1f4d,#0d6efd);
-color:white;
+background:#eef3f9;
+color:#08235c;
 }
+
+/* SCHOOL HEADER */
+
+.school-header{
+background: #ff6200;
+text-align:center;
+padding:20px;
+font-size:72px;
+font-weight:1000;
+letter-spacing:2px;
+border-bottom:5px solid #16a34a;
+}
+@media(max-width:768px){
+.school-header{
+font-size:30px;
+line-height:1.2;
+}
+}
+
+/* HERO */
 
 .hero{
-padding:40px 20px;
-}
-
-.container{
-max-width:1200px;
+max-width:1400px;
 margin:auto;
-}
-
-.top{
+padding:40px;
 display:flex;
 flex-wrap:wrap;
 align-items:center;
 justify-content:space-between;
-gap:30px;
 }
 
 .left{
 flex:1;
-min-width:300px;
+min-width:350px;
 }
 
 .right{
@@ -47,274 +61,345 @@ flex:1;
 text-align:center;
 }
 
-.right img{
-width:320px;
-max-width:100%;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.4);
-}
-
 .logo{
-font-size:55px;
-font-weight:700;
+font-size:72px;
+font-weight:800;
 }
 
 .logo span{
-color:#00e676;
+color:#2563eb;
 }
 
-.tag{
-font-size:20px;
-margin-top:10px;
-opacity:.9;
+.tagline{
+font-size:24px;
+margin-bottom:30px;
 }
 
-.title{
-font-size:48px;
+.heading{
+font-size:56px;
 font-weight:700;
-margin-top:25px;
 line-height:1.2;
 }
 
-.highlight{
-color:#00e676;
+.green{
+color:#16a34a;
 }
 
-.developer{
-margin-top:30px;
-font-size:20px;
+.subtitle{
+font-size:24px;
+margin-top:25px;
+color:#555;
+}
+
+/* PHOTO */
+
+.phone{
+display:inline-block;
+background:#08235c;
+padding:15px;
+border-radius:40px;
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.phone img{
+width:420px;
+max-width: 100%;
+border-radius:25px;
+}
+
+.name{
+font-size:54px;
+font-weight:800;
+margin-top:20px;
+}
+
+.mobile{
+font-size:38px;
+font-weight:700;
+color:#08235c;
+}
+@media (max-width:768px){
+
+.phone img{
+width:95%;
+max-width:420px;
+}
+
+.phone{
+padding:8px;
 }
 
 .name{
 font-size:42px;
-font-weight:700;
 }
 
-.school{
-margin-top:20px;
-background:white;
-color:#222;
-padding:15px;
-border-radius:15px;
-display:inline-block;
-font-weight:600;
+.mobile{
+font-size:30px;
 }
+
+}
+
+/* FEATURES */
 
 .features{
-background:white;
-color:#222;
-margin-top:50px;
+max-width:1400px;
+margin:30px auto;
+background:#032b7a;
 border-radius:25px;
 padding:30px;
-}
-
-.features h2{
-text-align:center;
-margin-bottom:25px;
-}
-
-.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:20px;
+color:white;
 }
 
-.card{
-background:#f5f7ff;
-padding:25px;
-border-radius:15px;
+.feature{
 text-align:center;
 }
 
-.card h3{
-color:#0d47a1;
+.feature h3{
+font-size:28px;
 margin-bottom:10px;
 }
 
-.download{
+/* SCREENSHOTS */
+
+.section-title{
 text-align:center;
-padding:50px 20px;
+font-size:48px;
+font-weight:700;
+margin:50px 0 30px;
+}
+
+.screens{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.screen{
+width:220px;
+height:450px;
+background:white;
+border-radius:30px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:600;
+}
+
+/* DOWNLOAD */
+
+.download{
+max-width:1400px;
+margin:40px auto;
+background:linear-gradient(90deg,#0d47a1,#1565c0);
+padding:30px;
+border-radius:25px;
+text-align:center;
+color:white;
+}
+
+.download h2{
+font-size:48px;
+}
+
+.download p{
+font-size:22px;
+margin:10px 0 25px;
 }
 
 .btn{
 display:inline-block;
-background:#00e676;
-color:#000;
-padding:18px 45px;
-font-size:24px;
-font-weight:700;
+background:#16a34a;
+padding:18px 50px;
 border-radius:50px;
+font-size:28px;
+font-weight:700;
 text-decoration:none;
-transition:.3s;
+color:white;
 }
 
-.btn:hover{
-transform:scale(1.05);
-}
+/* CONTACT */
 
 .contact{
-background:#081833;
-padding:30px;
-margin-top:40px;
-}
-
-.contact-grid{
+max-width:1400px;
+margin:40px auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:20px;
-text-align:center;
 }
 
 .box{
-background:#102755;
-padding:20px;
-border-radius:15px;
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .box h3{
+font-size:28px;
 margin-bottom:10px;
-color:#00e676;
 }
+
+/* FOOTER */
 
 .footer{
+background:#08235c;
+color:white;
 text-align:center;
 padding:25px;
-background:#05112a;
+margin-top:30px;
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
+
+.school-header{
+font-size:28px;
+}
+
+.heading{
+font-size:36px;
+}
 
 .logo{
-font-size:42px;
+font-size:50px;
 }
 
-.title{
-font-size:34px;
+.features{
+grid-template-columns:1fr 1fr;
 }
 
-.name{
-font-size:32px;
+.contact{
+grid-template-columns:1fr;
 }
 
 }
+
 </style>
 </head>
 
 <body>
 
-<section class="hero">
+<div class="school-header">
+NAVBHARAT PUBLIC SCHOOL
+</div>
 
-<div class="container">
-
-<div class="top">
+<div class="hero">
 
 <div class="left">
 
 <div class="logo">
-Chem<span>Guru</span>
+⚗ Chem<span>Guru</span>
 </div>
 
-<div class="tag">
+<div class="tagline">
 Learn • Practice • Master Chemistry
 </div>
 
-<div class="title">
+<div class="heading">
 Chemistry Learning App for
-<span class="highlight">Class 11 & 12 Students</span>
+<span class="green">Class 11 & 12 Students</span>
 </div>
 
-<div class="developer">
-Developed By
-</div>
-
-<div class="name">
-Sudhir Gaur
-</div>
-
-<div class="school">
-🏫 Navbharat Public School
+<div class="subtitle">
+Your Complete Companion for CBSE Board & Competitive Exams
 </div>
 
 </div>
 
 <div class="right">
+
+<div class="phone">
 <img src="sudhir.jpeg" alt="Sudhir Gaur">
 </div>
 
+<div class="name">
+SUDHIR GAUR
+</div>
+
+<div class="mobile">
+📞 8004093350
 </div>
 
 </div>
 
-</section>
-
-<section class="features">
-
-<h2>🚀 Powerful Learning Features</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>📚 Chapter Notes</h3>
-<p>Easy and detailed chapter-wise notes.</p>
 </div>
 
-<div class="card">
+<div class="features">
+
+<div class="feature">
+<h3>📚 Notes</h3>
+<p>Chapter-wise Notes</p>
+</div>
+
+<div class="feature">
 <h3>❓ MCQs</h3>
-<p>Practice topic-wise objective questions.</p>
+<p>Topic-wise Practice</p>
 </div>
 
-<div class="card">
+<div class="feature">
 <h3>🏆 Quiz</h3>
-<p>Test your preparation instantly.</p>
+<p>Test Preparation</p>
 </div>
 
-<div class="card">
+<div class="feature">
 <h3>🧠 Mind Maps</h3>
-<p>Visual learning made simple.</p>
+<p>Visual Learning</p>
 </div>
 
 </div>
 
-</section>
+<div class="section-title">
+Powerful Learning at Your Fingertips
+</div>
 
-<section class="download">
+<div class="screens">
+<div class="screen">Notes</div>
+<div class="screen">MCQs</div>
+<div class="screen">Quiz</div>
+<div class="screen">Mind Maps</div>
+</div>
 
-<h2 style="margin-bottom:25px;">
-📲 Download ChemGuru APK
-</h2>
+<div class="download">
+
+<h2>Download ChemGuru APK</h2>
+
+<p>Install Now and Start Your Learning Journey</p>
 
 <a class="btn"
 href="https://github.com/Sudhirgaur/ChemGuruSudhir/releases/download/v1.0/SUDHIR.apk">
 DOWNLOAD NOW
 </a>
 
-</section>
+</div>
 
-<section class="contact">
-
-<div class="contact-grid">
+<div class="contact">
 
 <div class="box">
 <h3>📞 Contact</h3>
-<p>8004093350</p>
+8004093350
 </div>
 
 <div class="box">
 <h3>🏫 School</h3>
-<p>Navbharat Public School</p>
+Navbharat Public School
 </div>
 
 <div class="box">
 <h3>📚 App</h3>
-<p>ChemGuru Learning Platform</p>
+ChemGuru
 </div>
 
 </div>
-
-</section>
 
 <div class="footer">
-ChemGuru © 2026 | Chemistry Made Easy
+Chemistry Made Easy • Learning Made Effective
 </div>
 
 </body>
