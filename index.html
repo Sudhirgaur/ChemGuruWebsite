@@ -180,18 +180,22 @@ padding:20px;
 }
 
 .screen{
-width:220px;
-height:450px;
-background:white;
+width:240px;
 border-radius:30px;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:22px;
-font-weight:600;
+overflow:hidden;
+background:white;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.3s;
 }
 
+.screen:hover{
+transform:translateY(-10px);
+}
+
+.screen img{
+width:100%;
+display:block;
+}
 /* DOWNLOAD */
 
 .download{
@@ -360,12 +364,24 @@ Powerful Learning at Your Fingertips
 </div>
 
 <div class="screens">
-<div class="screen">Notes</div>
-<div class="screen">MCQs</div>
-<div class="screen">Quiz</div>
-<div class="screen">Mind Maps</div>
+
+<div class="screen">
+<img src="notes.jpg" alt="Notes">
 </div>
 
+<div class="screen">
+<img src="mcqs.jpg" alt="MCQs">
+</div>
+
+<div class="screen">
+<img src="quiz.jpg" alt="Quiz">
+</div>
+
+<div class="screen">
+<img src="mindmap.jpg" alt="Mind Maps">
+</div>
+
+</div>
 <div class="download">
 
 <h2>Download ChemGuru APK</h2>
